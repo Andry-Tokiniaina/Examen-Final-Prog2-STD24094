@@ -31,6 +31,10 @@ public class Fees {
         return amount;
     }
 
+    public Student getStudent() {
+        return student;
+    }
+
     public Instant getDeadline() {
         return deadline;
     }
