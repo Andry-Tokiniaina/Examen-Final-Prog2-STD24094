@@ -48,6 +48,7 @@ class GestionFraisTest {
         listFees.add(fee2);
         listFees.add(fee3);
         listFees.add(fee4);
+
     }
 
     @Test
@@ -64,7 +65,7 @@ class GestionFraisTest {
 
     @Test
     void testGetTotalPaidFees(){
-        assertEquals(345_000.00d, gf.getTotalPaidByStudent(student, student.getFees(), Instant.now()));
+        assertEquals(345_000.00d, gf.getTotalPaidByStudent(student, listFees, Instant.now()));
     }
 
 }

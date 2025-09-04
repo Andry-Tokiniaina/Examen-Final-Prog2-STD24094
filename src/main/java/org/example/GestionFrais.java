@@ -35,7 +35,7 @@ public class GestionFrais {
 
     public double getTotalPaidByStudent(Student student, List<Fees> fees, Instant t){
         double total = 0;
-        for(Fees fee : student.getFees()){
+        for(Fees fee : fees){
             total+= fee.getPaidedAt(t);
         }
         return total;
